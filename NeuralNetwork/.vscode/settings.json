@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./NeuralNetwork",
+    "./NeuralNetwork/NeuralNetworkImple"
+  ]
+}
