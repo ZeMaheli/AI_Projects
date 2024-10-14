@@ -1,8 +1,9 @@
 import numpy as np
 
 import Neuron
+import BaseLayer
 
-class HiddenLayer():
+class HiddenLayer(BaseLayer.BaseLayer):
     def __init__(self, input_size, output_size, activation_fun, activation_derivative):
         self.input_size = input_size
         self.output_size = output_size

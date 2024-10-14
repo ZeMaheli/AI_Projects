@@ -20,9 +20,18 @@ class Neuron():
         return self.y
     
     def adapt(self, delta_n, y_n_minus_1, alpha, beta):
+        # Ensure y_n_minus_1 is a numpy array for element-wise operations
+        y_n_minus_1 = np.array(y_n_minus_1)
+
+        # Momentum for weights
+        momentum_w = beta * self.delta_w
+
         # Update weights and bias based on the error and previous layer's outputs
-        self.delta_w = -alpha * self.y_prime * delta_n * y_n_minus_1
+        self.delta_w = -alpha * self.y_prime * delta_n * y_n_minus_1 + momentum_w
         self.weights += self.delta_w
         
+        # Momentum for bias
+        momentum_b = beta * self.delta_b
+
         self.delta_b = -alpha * self.y_prime * delta_n
         self.bias += self.delta_b

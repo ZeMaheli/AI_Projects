@@ -66,17 +66,21 @@ class NeuralNetwork():
             camada.adapt(delta, y_prev, alpha, beta)
 
             # Get dimensions of the current and previous layer
-            dn = len(camada.neurons)           # Dimension of current layer
-            dn_1 = len(camada_prev.neurons)    # Dimension of previous layer
+            #dn = len(camada.neurons)           # Dimension of current layer
+            #dn_1 = len(camada_prev.neurons)    # Dimension of previous layer
 
             # Calculate the delta for the previous layer (𝜹𝑛−1)
             delta_new = []
-            for i in range(dn_1):
+            """ for i in range(dn_1):
                 # Calculate the delta for each neuron in the previous layer
                 sum_delta = 0
                 for j in range(dn):
                     neuron_j = camada.neurons[j]
-                    sum_delta += neuron_j.w[i] * delta[j] * neuron_j.y_prime  # Weighted sum of deltas
+                    sum_delta += neuron_j.weights[i] * delta[j] * neuron_j.y_prime  # Weighted sum of deltas
+                delta_new.append(sum_delta) """
+
+            for i in range(len(y_prev)):
+                sum_delta = sum(neuron.weights[i] * delta[j] * neuron.y_prime for j, neuron in enumerate(camada.neurons))
                 delta_new.append(sum_delta)
 
             # Update delta for the next iteration (moving backward)
