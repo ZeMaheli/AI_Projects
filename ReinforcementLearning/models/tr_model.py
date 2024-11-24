@@ -11,9 +11,21 @@ class TRModel:
         self.R[(state, action)] = reward
 
     def showcase(self):
-        state, action = random.randint(0, self.T.__sizeof__() - 1)
-        next_state = self.T[(state, action)]
-        reward = self.R[(state, action)]
+        """
+        Samples a random transition (state, action, reward, next_state) from the model.
+        """
+        if not self.T:
+            raise ValueError("No transitions available in the model.")
+
+        # Choose a random key from self.T
+        state_action = random.choice(list(self.T.keys()))
+
+        # Extract values from the dictionaries
+        next_state = self.T[state_action]
+        reward = self.R[state_action]
+
+        # Unpack the (state, action) key
+        state, action = state_action
+
         return state, action, reward, next_state
 
-# Crias ambiente, agente recebe instancia de ambiente e mecanismo, no agente tens run que implementa o q-learning

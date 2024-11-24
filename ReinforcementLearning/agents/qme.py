@@ -1,6 +1,7 @@
-from memoria_aprendizagem import LearningMemory, ActionSelection
+from memories.base_memory import LearningMemory
 from memories.memory_experience import MemoryExperience
 from agents.q_learning import QLearning
+from policies.base_policy import ActionSelection
 
 
 class QME(QLearning):

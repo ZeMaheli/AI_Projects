@@ -38,7 +38,7 @@ class EGreedy(ActionSelection):
 
     def max_action(self, state):
         random.shuffle(self.actions)
-        max(self.actions, key=lambda a: self.learn_mem.Q(state, a))
+        return max(self.actions, key=lambda a: self.learn_mem.Q(state, a))
 
     def advantage(self, state):
         return self.max_action(state)

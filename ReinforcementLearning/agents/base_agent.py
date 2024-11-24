@@ -28,7 +28,7 @@ class ReinforcementLearn(ABC):
         self.learn_memory = learn_memory
         self.action_select = action_select
         self.alpha = alpha
-        self.gama = gamma
+        self.gamma = gamma
 
     @abstractmethod
     def learn(self, state, action, reward, next_state, next_action=None):
