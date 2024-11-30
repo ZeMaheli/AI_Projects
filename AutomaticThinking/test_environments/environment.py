@@ -2,11 +2,11 @@ import math
 
 
 class Environment:
-    def __init__(self, dimension, initial_position, target_position, obstacles_positions):
+    def __init__(self, dimension, initial_position, target_positions, obstacles_positions):
         self.x_max = dimension
         self.y_max = dimension
         self.initial_position = initial_position
-        self.target_position = target_position
+        self.target_positions = target_positions
         self.obstacles_positions = obstacles_positions
 
         self.movements = [(0, 1), (0, -1), (1, 0), (-1, 0)]

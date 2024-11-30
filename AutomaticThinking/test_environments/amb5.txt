@@ -1,0 +1,42 @@
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+O        OOOOOOOOOOOOOOOOOOOOOOOOO       O
+O        O       O       O       O       O
+O        O       O       O       O       O
+O        O       O       O       O       O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O@   O   O   O   O   O   O   O   O   O  AO
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O   O   O   O   O   O   O   O   O   O
+O    O       O       O       O       O   O
+O    O       O       O       O       O   O
+O    O       O       O       O       O   O
+O    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO   O
+O                                        O
+O                                        O
+O                                        O
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO

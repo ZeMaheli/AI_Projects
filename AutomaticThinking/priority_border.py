@@ -6,7 +6,7 @@ class PriorityBorder:
         self.nodes = PriorityQueue()
 
     def cleanup(self):
-        while self.nodes.qsize() != 0:
+        while not self.nodes.empty():
             self.nodes.get()
 
     def empty(self):

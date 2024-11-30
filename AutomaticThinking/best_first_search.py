@@ -38,11 +38,11 @@ class BestFirstSearch:
 
     def expand(self, problem, node):
         successors = []
-
-        for operator in problem.sucessors:
-            successor_state = operator.apply(node.state)
+        state = node.state
+        for operator in problem.operators:
+            successor_state = operator.apply(state)
             if successor_state:
-                cost = node.cost + operator.cost(node.state, successor_state)
+                cost = node.cost + operator.cost(state, successor_state)
                 successor_node = Node(successor_state, operator, node, cost)
                 successors.append(successor_node)
 
