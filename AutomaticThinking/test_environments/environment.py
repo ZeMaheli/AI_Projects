@@ -8,6 +8,8 @@ class Environment:
         self.initial_position = initial_position
         self.target_positions = target_positions
         self.obstacles_positions = obstacles_positions
+        self.positions = [(x, y) for x in range(self.x_max) for y in range(self.y_max) if
+                          (x, y) not in self.obstacles_positions]
 
         self.movements = [(0, 1), (0, -1), (1, 0), (-1, 0)]
 
