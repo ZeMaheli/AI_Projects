@@ -1,8 +1,8 @@
 import math
 from abc import abstractmethod
 
-from node import Node
-from priority_border import PriorityBorder
+from search.node import Node
+from search.priority_border import PriorityBorder
 
 
 class BestFirstSearch:
@@ -56,7 +56,7 @@ class BestFirstSearch:
         node = final_node
 
         while node:
-            solution.insert(0, node)
+            solution.insert(0, node.state)
             node = node.predecessor
 
         return solution

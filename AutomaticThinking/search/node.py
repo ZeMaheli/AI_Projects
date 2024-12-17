@@ -9,3 +9,6 @@ class Node:
             self.depth = self.predecessor.depth + 1
         else:
             self.depth = 0
+
+    def __lt__(self, other):
+        return self.cost < other.cost  # Compare nodes based on their cost
