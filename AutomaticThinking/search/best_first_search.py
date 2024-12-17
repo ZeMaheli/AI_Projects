@@ -1,3 +1,4 @@
+import math
 from abc import abstractmethod
 
 from node import Node
@@ -10,7 +11,7 @@ class BestFirstSearch:
         self.explored = {}
         self.problem = None
 
-    def solve(self, problem):
+    def solve(self, problem, max_depth=math.inf, parcial=False):
         self.problem = problem
         self.cleanup_memory()
         node = Node(problem.initial_state)
@@ -21,9 +22,11 @@ class BestFirstSearch:
 
             if problem.objective(node.state):
                 return self.generate_solution(node)
-            else:
+            elif node.depth < max_depth:
                 for successor_node in self.expand(problem, node):
                     self.memorize(successor_node)
+            elif parcial:
+                return self.generate_solution(node)
 
         return None
 

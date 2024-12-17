@@ -1,6 +1,6 @@
 from xmlrpc.client import MININT
 
-from wave_front_algorithm import WaveFront
+from search.wave_front_algorithm import WaveFront
 
 
 class WaveFrontPlanner:
@@ -11,7 +11,7 @@ class WaveFrontPlanner:
 
     def plan(self):
         V = self.wave_front.propagate_value(self.model)
-        policy = {s: max(self.model.A, key=lambda a: self.action_value(s, a)) for s in self.model.S if
+        policy = {s: max(self.model.actions, key=lambda a: self.action_value(s, a)) for s in self.model.states if
                   s not in self.model.objectives}
         return policy
 

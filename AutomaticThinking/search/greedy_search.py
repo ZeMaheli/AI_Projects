@@ -1,4 +1,4 @@
-from best_first_search import BestFirstSearch
+from search.best_first_search import BestFirstSearch
 
 
 class GreedySearch(BestFirstSearch):
